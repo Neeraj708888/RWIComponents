@@ -1,0 +1,119 @@
+/* Filename: styles.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');  */
+/*  */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300'); */
+/*  */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  height: 100%;
+  background: #7eaf7e;
+  padding: 1em;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Footer CSS */
+.footer-content {
+  font-size: 1em;
+  font-weight: 500;
+}
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.address-detail {
+  height: 5em;
+  width: 12em;
+}
+.query {
+  height: 5em;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.service {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Bottom part CSS */
+.bottom-item {
+  display: flex;
+  justify-content: space-between;
+  background: #3e3e3e transparent;
+}
+.bottom-item p > span {
+  font-weight: 800;
+  color: #a29494;
+}
+.right{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+/* Add Responsive */
+
+@media screen and (min-width: 100px) and (max-width: 550px) {
+  .footer-content {
+    height: 15em;
+    padding: 1em;
+  }
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: start;
+  } 
+  .general-query > p > span {
+    text-align: center;
+  }
+  .footer-items {
+    display: block;
+    align-items: center;
+    font-size: 1.5em;
+    place-items: center;
+  }
+  .query {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 10em;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+  .employee-query .employee {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .bottom-item {
+    display: block;
+    width: 100%;
+  }
+  .bottom {
+    text-align: center;
+  }
+  .right {
+    display: grid;
+    padding: 0 1em 0 0;
+    width: 100%;
+    place-items: center;
+  }
+}
