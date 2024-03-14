@@ -1,0 +1,34 @@
+.menu-button{
+    text-align: center;
+    gap: 3em;
+    background: #454545;
+}
+.menu-button .btn{
+    border: 0.5em solid #454545;
+    border-radius: 2em;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+    background: #0b0c0b;
+    color: #4eaeae;
+}
+.bm-menu-wrap{
+    width: 100% !important;
+}
+.bm-item-list{
+    width: 100% !important;
+}
+
+/* Media queries  */
+@media screen and (min-width: 100px) and (max-width: 350px){
+    .menu-button{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 24.5em;
+    }
+    .btn{
+        font-size: 1em;
+        font-weight: 200;
+    }
+}
